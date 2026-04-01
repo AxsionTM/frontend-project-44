@@ -1,24 +1,24 @@
-import runEngine from '../index.js';
+import runEngine from '../index.js'
 
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 // Предикат для проверки на простоту
 const isPrime = (num) => {
-  if (num < 2) return false;
+  if (num < 2) return false
   for (let i = 2; i <= Math.sqrt(num); i += 1) {
-    if (num % i === 0) return false;
+    if (num % i === 0) return false
   }
-  return true;
-};
+  return true
+}
 
 const getRoundData = () => {
-  const number = getRandomInt(1, 100);
-  const question = String(number);
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const number = getRandomInt(1, 100)
+  const question = String(number)
+  const correctAnswer = isPrime(number) ? 'yes' : 'no'
 
-  return [question, correctAnswer];
-};
+  return [question, correctAnswer]
+}
 
-export default () => runEngine(description, getRoundData);
+export default () => runEngine(description, getRoundData)
