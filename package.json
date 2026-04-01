@@ -11,7 +11,7 @@
     "url": "git+https://github.com/AxsionTM/frontend-project-44.git"
   },
   "license": "ISC",
-  "author": "Maxsim Ignatev",
+  "author": "Maxsim Ignatev 01.24",
   "type": "module",
   "main": "index.js",
   "scripts": {
