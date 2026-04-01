@@ -1,10 +1,10 @@
+import crypto from 'crypto'
 import runEngine from '../index.js'
 
 const description = 'What number is missing in the progression?'
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+const getRandomInt = (min, max) => crypto.randomInt(min, max + 1)
 
-// Функция для генерации самой прогрессии
 const generateProgression = (start, step, length) => {
   const progression = []
   for (let i = 0; i < length; i += 1) {
@@ -14,17 +14,21 @@ const generateProgression = (start, step, length) => {
 }
 
 const getRoundData = () => {
-  const start = getRandomInt(1, 20) // Начальное число
-  const step = getRandomInt(2, 10) // Шаг прогрессии
-  const length = getRandomInt(5, 10) // Длина (от 5 до 10 по заданию)
+  const minStart = 1
+  const maxStart = 20
+  const minStep = 2
+  const maxStep = 10
+  const minLen = 5
+  const maxLen = 10
+
+  const start = getRandomInt(minStart, maxStart)
+  const step = getRandomInt(minStep, maxStep)
+  const length = getRandomInt(minLen, maxLen)
 
   const progression = generateProgression(start, step, length)
-
-  // Выбираем случайный индекс, который спрячем
   const hiddenIndex = getRandomInt(0, length - 1)
   const correctAnswer = progression[hiddenIndex]
 
-  // Заменяем число на две точки
   progression[hiddenIndex] = '..'
   const question = progression.join(' ')
 

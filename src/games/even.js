@@ -3,7 +3,6 @@ import getRandomInt from '../utils.js'
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-// Предикат (функция-вопрос), проверяющий на чётность
 const isEven = num => num % 2 === 0
 
 const getRoundData = () => {

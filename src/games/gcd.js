@@ -4,7 +4,6 @@ const description = 'Find the greatest common divisor of given numbers.'
 
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
-// Алгоритм Евклида для нахождения НОД
 const getGcd = (a, b) => {
   if (b === 0) {
     return a
