@@ -1,6 +1,23 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/dfasdfdg/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/dfasdfdg/frontend-project-44/actions)
 
+---
+
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/146373364?v=4" width="120" style="border-radius:50%">
+</p>
+
+<h2 align="center">👨‍💻 Maxsim (Axsion)</h2>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Age-17-blue?style=for-the-badge">
+  <a href="https://github.com/AxsionTM">
+    <img src="https://img.shields.io/badge/GitHub-Axsion-black?style=for-the-badge&logo=github">
+  </a>
+</p>
+
+---
+
 ## Демонстрация игры: "Проверка на чётность #5"
 [![asciicast](https://asciinema.org/a/xdf1Qp72ShRQfm6o.svg)](https://asciinema.org/a/xdf1Qp72ShRQfm6o)
 
