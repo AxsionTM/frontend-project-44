@@ -12,3 +12,6 @@
 
 ## Демонстрация игры: "Арифметическая прогрессия #8"
 [![asciicast](https://asciinema.org/a/sRHU3YATGHjt3Pfq.svg)](https://asciinema.org/a/sRHU3YATGHjt3Pfq)
+
+## Демонстрация игры: "Простое ли число? #9"
+[![asciicast](https://asciinema.org/a/8mjB9DfNmNz5NQFi.svg)](https://asciinema.org/a/8mjB9DfNmNz5NQFi)
