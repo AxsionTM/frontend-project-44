@@ -1,8 +1,9 @@
+import { randomInt } from 'node:crypto'
 import runEngine from '../index.js'
 
 const description = 'Find the greatest common divisor of given numbers.'
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+const getRandomInt = (min, max) => randomInt(min, max + 1)
 
 const getGcd = (a, b) => {
   if (b === 0) {

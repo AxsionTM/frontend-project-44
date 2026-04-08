@@ -1,3 +1,5 @@
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+import { randomInt } from 'node:crypto';
 
-export default getRandomInt
+const getRandomInt = (min, max) => randomInt(min, max + 1);
+
+export default getRandomInt;
