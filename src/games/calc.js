@@ -1,8 +1,10 @@
+import { randomInt } from 'node:crypto' // Импортируем безопасный метод
 import runEngine from '../index.js'
 
 const description = 'What is the result of the expression?'
 
-const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+// randomInt из crypto работает с диапазоном [min, max), поэтому прибавляем 1
+const getRandomInt = (min, max) => randomInt(min, max + 1)
 
 const calculate = (num1, num2, operator) => {
   switch (operator) {
